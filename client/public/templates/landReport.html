@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoStats</title>
+  <link rel="stylesheet" href="../src/styles/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+          <img src="../logo.png" alt="Logo">
+          <h1 class="logo-name">ECOSTATS</h1>
+        </div>
+        <nav class="nav-links">
+          <a href="#" >Home</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="reports.html" class="active">Reports</a>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." id="search-bar">
+          <i class='bx bx-search'></i>
+        </div>
+        <div class="user-profile" id="user-profile">
+          <i class='bx bx-user'></i>
+          <div class="dropdown" id="dropdown">
+            <a href="#" id="sign-in">Sign In</a>
+            <a href="#" id="logout">Logout</a>
+          </div>
+        </div>
+        </header>
+
+    <aside class="sidebar">
+        <h2 class="sidebar-title">REPORTS</h2>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Land <br> Management<i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="./templates/landReport.html" onclick="showContent('report1')">Report 1</a>
+            <a href="./templates/landReport.html" onclick="showContent('report2')">Report 2</a>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Forestry <br> Management<i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="#" onclick="showContent('report3')">Report 3</a>
+            <a href="#" onclick="showContent('report4')">Report 4</a>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Biodiversity Management <i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="./templates/Wildllife.html" onclick="showContent('report5')">Report 5</a>
+            <a href="./templates/bio.html" onclick="showContent('report6')">Report 6</a>
+          </div>
+        </div>
+    </aside>
+  
+  <main class="main-content">
+
+    <table  contenteditable="true">
+        <th  class="thead" colspan="3">
+            <h4>Table 1. Land Area: CY ____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Contested Area (ha)</th>
+            <th>Uncontested Area (ha)</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="3">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th   class="thead" colspan="7">
+            <h4>Table 2. Patrimonial Properties: CY ____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">Municipality/City</th>
+            <th rowspan="2">No. of Lots</th>
+            <th rowspan="2">Total Land Area (ha)</th>
+            <th colspan="2">Income</th>
+        </tr>
+        <tr>
+            <th>Sale</th>
+            <th>Lease</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="7">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="6">
+            <h4>Table 3. Residential Free Patent Issued: CY ____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">No. of Transmitted to RoD</th>
+            <th rowspan="2">Area (ha)</th>
+            <th colspan="3">Number of Beneficiaries</th>
+        </tr>
+        <tr>
+            <th>Total Beneficiaries</th>
+            <th>Female</th>
+            <th>Male</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="6">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="7">
+            <h4>Table 4. Agricultural Free Patent Issued: CY ____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">No. of Transmitted to RoD</th>
+            <th rowspan="2">Area (ha)</th>
+            <th colspan="3">Number of Beneficiaries</th>
+            <th rowspan="2">List of other Patents issued more than 5 hectares</th>
+        </tr>
+        <tr>
+            <th>Total Beneficiaries</th>
+            <th>Female</th>
+            <th>Male</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="7">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="6">
+            <h4>Table 5. Homestead: CY ____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">No. of Transmitted to RoD</th>
+            <th rowspan="2">Area (ha)</th>
+            <th colspan="3">Number of Beneficiaries</th>
+        </tr>
+        <tr>
+            <th>Total Beneficiaries</th>
+            <th>Female</th>
+            <th>Male</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC"  colspan="6">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="8">
+            <h4>Table 6. List of Special Patents of LGUs and NGAs: CY ____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Name of Patentee</th>
+            <th rowspan="2">Area (ha)</th>
+            <th colspan="2">Location</th>
+            <th rowspan="2">Patent No.</th>
+            <th rowspan="2">Date Transmitted to RoD</th>
+            <th colspan="2">Government Sites/Housing Project endorsed to Central Office for Issuance of Proclamation/Special Patent</th>
+        </tr>
+        <tr>
+            <th>Barangay</th>
+            <th>Municipality</th>
+            <th>School Site</th>
+            <th>LGU Government Site</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="8">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="5">
+            <h4>Table 7. Management of Foreshore Areas: CY ____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">Municipality</th>
+            <th colspan="3">Foreshore Lease Agreements Issued</th>
+        </tr>
+        <tr>
+            <th>No. of Lots</th>
+            <th>Total Land Area (ha)</th>
+            <th>Total Forecasted Annual Revenue (Php)</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC"  colspan="5">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="14">
+            <h4>Table 8. Inspection, Verification and Approval Survey: CY ____</h4>
+        </th>
+        <tr>
+            <th>Total Number of Plans</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sept</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <th>No. Approves Surveys</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Original Surveys</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Subsequent Surveys (Titled & Untitled) </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Titled (PSD, PCS, etc)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="14">Source:</th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th  class="thead" colspan="4">
+            <h4>Table 1. Land Area</h4>
+        </th>
+        <tr>
+            <th></th>
+            <th>Definition</th>
+            <th>Unit/Meassure</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+
+  </main>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    document.getElementById('user-profile').addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdown');
+      if (!document.getElementById('user-profile').contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+  </script>
+</body>
+</html>

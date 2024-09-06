@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoStats</title>
+  <link rel="stylesheet" href="../src/styles/home.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-section">
+      <img src="logo.png" alt="Logo">
+      <h1 class="logo-name">ECOSTATS</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+    <div class="user-profile" id="user-profile">
+      <i class='bx bx-user'></i>
+      <div class="dropdown" id="dropdown">
+        <a href="#" id="sign-in">Sign In</a>
+        <a href="#" id="logout">Logout</a>
+      </div>
+    </div>
+  </header>
+  
+  <aside class="sidebar">
+    <h2 class="sidebar-title">DASHBOARD</h2>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Land <br> Management<i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="#report1" onclick="showContent('report1')">Report 1</a>
+        <a href="#report2" onclick="showContent('report2')">Report 2</a>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Forestry <br> Management<i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="#report3" onclick="showContent('report3')">Report 3</a>
+        <a href="#report4" onclick="showContent('report4')">Report 4</a>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Biodiversity Management <i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="#report5" onclick="showContent('report5')">Report 5</a>
+        <a href="#report6" onclick="showContent('report6')">Report 6</a>
+      </div>
+    </div>
+  </aside>
+  
+  <main class="main-content">
+
+  </main>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    document.getElementById('user-profile').addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdown');
+      if (!document.getElementById('user-profile').contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

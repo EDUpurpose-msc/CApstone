@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoStats</title>
+  <link rel="stylesheet" href="../src/styles/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-section">
+      <img src="../logo.png" alt="Logo">
+      <h1 class="logo-name">ECOSTATS</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#" >Home</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="reports.html" class="active">Reports</a>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search..." id="search-bar">
+      <i class='bx bx-search'></i>
+    </div>
+    <div class="user-profile" id="user-profile">
+      <i class='bx bx-user'></i>
+      <div class="dropdown" id="dropdown">
+        <a href="#" id="sign-in">Sign In</a>
+        <a href="#" id="logout">Logout</a>
+      </div>
+    </div>
+  </header>
+  
+  <aside class="sidebar">
+    <h2 class="sidebar-title">REPORTS</h2>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Land <br> Management<i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="./templates/landReport.html" onclick="showContent('report1')">Report 1</a>
+        <a href="./templates/landReport.html" onclick="showContent('report2')">Report 2</a>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Forestry <br> Management<i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="#" onclick="showContent('report3')">Report 3</a>
+        <a href="#" onclick="showContent('report4')">Report 4</a>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Biodiversity Management <i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="./templates/Wildllife.html" onclick="showContent('report5')">Report 5</a>
+        <a href="./templates/bio.html" onclick="showContent('report6')">Report 6</a>
+      </div>
+    </div>
+  </aside>
+  
+  <main class="main-content">
+    
+    <h2>Monitoring of Protected Area Visitors</h2>
+    <div class="table-container">
+    <table id="Form1"  contenteditable="true">
+    <th colspan="9" class="Mpav" contenteditable="true">
+        <h3>CENRO:</h3>
+        <h3>PENRO: MARINDUQUE</h3>
+        <h3>REGION: IV-B</h3>
+    </th>
+    <tr>
+        <th>
+            <h5>Function: Management and Development of Protected Areas</h5>
+            <h5>Activity: Monitoring of Protected Area Visitors</h5>
+        </th>
+        <th colspan="7">
+            <h4>PROTECTED AREAS, WILDLLIFE AND COASTAL ZONE MANAGEMENT SERVICE
+        Statistical Report
+            </h4>
+            <h5>1st Quarter CY 2023</h5>
+        </th>
+        <th>
+            <h5> DENR Statistical Form 5</h5>
+            <h5> PAWCZMS Statistical Form 1a</h5>
+        </th>
+    </tr>
+    <tr>
+        <th rowspan="3">Protected Area</th>
+        <th colspan="3">Local</th>
+        <th colspan="3">Foreign</th>
+        <th rowspan="3">Total Number of Visitors</th>
+        <th rowspan="3">Remarks</th>
+    </tr>
+    <tr>
+        <th colspan="2">Sex</th>
+        <th rowspan="2">Total</th>
+        <th colspan="2">Sex</th>
+        <th rowspan="2">Total</th>
+    </tr>
+    <tr>
+        <th>M</th>
+        <th>F</th>
+        <th>M</th>
+        <th>F</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>Prepared by:</td>
+        <td>Reviewed by:</td>
+        <td>Approved by:</td>
+    </tr>
+    <tr contenteditable="true">
+        <td>Name<br>Position</td>
+        <td>Name<br>Position</td>
+        <td>Name<br>Position</td>
+    </tr>
+  </table>
+</div>
+
+<br>
+<table class="table2" contenteditable="true">
+    <th colspan="9" class="Mpav2" contenteditable="true">
+        <h3>CENRO:</h3>
+        <h3>PENRO: MARINDUQUE</h3>
+        <h3>REGION: IV-B</h3>
+    </th>
+    <tr>
+        <th>
+            <h5>Function: Management and Development of Protected Areas<span> </span>Activity: Monitoring of Income Generated within Protected Areas</span></h5>
+        </th>
+        <th colspan="9">
+            <h4>PROTECTED AREAS, WILDLLIFE AND COASTAL ZONE MANAGEMENT SERVICE
+        Statistical Report
+            </h4>
+            <h5>1st Quarter CY 2023</h5>
+        </th>
+        <th colspan="4">
+            <h5> DENR Statistical Form 5</h5>
+            <h5> PAWCZMS Statistical Form 1b</h5>
+        </th>
+    </tr>
+    <tr>
+        <th rowspan="2">Protected Area/PA Sub-fund Code</th>
+        <th colspan="9">Income Generated(Peso)</th>
+        <th colspan="3">Amount/Date Deposited to BTR</th>
+        <th rowspan="2">Remarks</th>
+    </tr>
+    <tr>
+        <th>Protected Area Entranced Fee</th>
+        <th>Facilities User Fee</th>
+        <th>Resource User Fee</th>
+        <th>Concession Fee</th>
+        <th>Development Fee/Royalty</th>
+        <th>Contribution/Donation</th>
+        <th>Fines and Penalties</th>
+        <th>Others (Pls. Specify)</th>
+        <th>Total Income</th>
+        <th>Retained Income 75%</th>
+        <th>SAGF 25%</th>
+        <th>Total Income</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> 
+</table>
+<table>
+    <tr>
+        <td>Prepared by:</td>
+        <td>Reviewed by:</td>
+        <td>Certified by:</td>
+        <td>Approved by:</td>
+    </tr>
+    <tr>
+        <td>Name<br>Position</td>
+        <td>Name<br>Position</td>
+        <td>Name<br>Position</td>
+        <td>Name<br>Position</td>
+    </tr>
+</table>
+
+
+
+
+  </main>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    document.getElementById('user-profile').addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdown');
+      if (!document.getElementById('user-profile').contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+  </script>
+</body>
+</html>

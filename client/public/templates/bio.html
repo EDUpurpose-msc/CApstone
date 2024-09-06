@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoStats</title>
+  <link rel="stylesheet" href="../src/styles/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+          <img src="../logo.png" alt="Logo">
+          <h1 class="logo-name">ECOSTATS</h1>
+        </div>
+        <nav class="nav-links">
+          <a href="#" >Home</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="reports.html" class="active">Reports</a>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." id="search-bar">
+          <i class='bx bx-search'></i>
+        </div>
+        <div class="user-profile" id="user-profile">
+          <i class='bx bx-user'></i>
+          <div class="dropdown" id="dropdown">
+            <a href="#" id="sign-in">Sign In</a>
+            <a href="#" id="logout">Logout</a>
+          </div>
+        </div>
+    </header>
+  
+    <aside class="sidebar">
+        <h2 class="sidebar-title">REPORTS</h2>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Land <br> Management<i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="./templates/landReport.html" onclick="showContent('report1')">Report 1</a>
+            <a href="./templates/landReport.html" onclick="showContent('report2')">Report 2</a>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Forestry <br> Management<i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="#" onclick="showContent('report3')">Report 3</a>
+            <a href="#" onclick="showContent('report4')">Report 4</a>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Biodiversity Management <i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="./templates/Wildllife.html" onclick="showContent('report5')">Report 5</a>
+            <a href="./templates/bio.html" onclick="showContent('report6')">Report 6</a>
+          </div>
+        </div>
+    </aside>
+  
+  <main class="main-content">
+    
+    <h2  contenteditable="true">Marinduque Wildlife Sanctuary (MWS) Profile: CY ____</h4>
+    <table  contenteditable="true">
+        <th class="title" colspan="2">
+            <h4>Table 1: Profile of Protected Area</h4>
+        </th>
+        <tr>
+            <th class="thead" colspan="2">General Information</th>
+        </tr>
+        <tr>
+            <th class="GI">Location</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Ecosystem Type</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Legal Basis (Proclamation Number)</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Legal Status</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Total Area (hectares)</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Multiple Use Zone Area</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Strict Protection Zone Area</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Buffer Zone Area (hectares)</th>
+            <td></td>
+        </tr>
+    </table>
+    <table  contenteditable="true">
+        <tr>
+            <th class="thead" colspan="4">Income and Economic Activities</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Integrated Protected Area Fund (IPAF) Collection and Disbursement Status</th>
+            <th>Source of Income</th>
+            <th>Percentage of Income</th>
+            <th>Total Income (PHP)</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>List of Major Economic Activities</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Annual Income Generated (Php) </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="6">Protected Area Management</th>
+        </tr>
+        <tr>
+            <th>Management Plan</th>
+            <th colspan="3">Year Adopted</th>
+            <th colspan="2">Implementation Period</th>
+        </tr>
+        <tr>
+            <td>Protected Area Management Plan</td>
+            <td colspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Ecosystem Management Plan</td>
+            <td colspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Cave Management Plan</td>
+            <td colspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Wetland Management Plan</td>
+            <td colspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Survey and Registration of Protected Area Occupants (SRPAO) </td>
+            <td colspan="2"> Year Completed</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">No. of PA Occupants</td>
+            <td></td>
+            <td>Male</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="2">Reforestation</th>
+        </tr>
+        <tr>
+            <td class="GI">Area Planted</td>
+           <td></td>
+        </tr>
+        <tr>
+            <td>Species Planted</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="4">With Protected Area Management Board</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Name of Organization</th>
+            <th colspan="3">Number of PAMB Members</th>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="4">Monitoring of PA Visitors</th>
+        </tr>
+        <tr>
+            <th>Type of Visitors</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Foreign</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Local</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="SRC" colspan="4">Source:</td>
+        </tr>
+    </table>
+    <table  contenteditable="true">
+        <tr>
+            <th>Categories</th>
+            <th>Number of Visitors</th>
+        </tr>
+        <tr>
+            <td>Children less than 7 yrs old </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Student</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Senior Citizen</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Person with Disability</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br>
+    
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="5">Inventory of Coastal Resources Condition in the Protected Area</th>
+        </tr>
+        <tr>
+            <th>Coastal Resource</th>
+            <th>Date of Inventory</th>
+            <th>Status</th>
+            <th>Area (in hectares) </th>
+            <th>Dominant Species</th>
+        </tr>
+        <tr>
+            <td rowspan="5">Mangrove</td>
+            <td rowspan="5"></td>
+        </tr>
+        <tr>
+            <td>Poor</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fair</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Good</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Excellent</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="5">Corals</td>
+            <td rowspan="5"></td>
+        </tr>
+        <tr>
+            <td>Poor</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fair</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Good</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Excellent</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="5">Seagrass</td>
+            <td rowspan="5"></td>
+        </tr>
+        <tr>
+            <td>Poor</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fair</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Good</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Excellent</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="5">Source: </th>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="13">Biodiversity Friendly Enterprise</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Name of PO Assisted</th>
+            <th rowspan="2">Area</th>
+            <th rowspan="2">Coordinates (DMS) </th>
+            <th rowspan="2">Name of PA/Other Conservation</th>
+            <th rowspan="2">Name of Enterprise</th>
+            <th rowspan="2">Category of BDFE</th>
+            <th rowspan="2">Product of BDFE/Enterprise</th>
+            <th colspan="2">No. of members</th>
+            <th rowspan="2">BDFE Level</th>
+            <th rowspan="2">Year Established</th>
+            <th rowspan="2">Net Income</th>
+            <th rowspan="2">Financial Assistance</th>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <th>Female</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Sustainable Forestry</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Established</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Manufacturing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Strengthened</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Developed</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="5">Ecotourism Sites/Identified/Assessed/Developed</th>
+        </tr>
+        <tr>
+            <th>Name of Ecotourism Site</th>
+            <th>Other Name of Ecotourism Site</th>
+            <th>Area (in hectares)</th>
+            <th>Main Attraction</th>
+            <th>Facilities Available</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="7">With Protected Area Community-Based Resource Management Agreement (PACBRMA) </th>
+        </tr>
+        <tr>
+            <th>Name of People's Org</th>
+            <th>Area Covered (in hectares)</th>
+            <th>Date Approved</th>
+            <th>Date Expired</th>
+            <th>Number of Families</th>
+            <th>PO Total Male</th>
+            <th>PO Total Female</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="7">Source:</th>
+        </tr>
+    </table>
+    <table  contenteditable="true">
+        <tr>
+            <th  class="thead" colspan="5">With Special Use Agreement in Protected Areas (SAPA)</th>
+        </tr>
+        <tr>
+            <th>Name of SAPA Holder</th>
+            <th>Nature of Development</th>
+            <th>Area Covered (in hectares)</th>
+            <th>Date Approved</th>
+            <th>Date Expired</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="SRC" colspan="5">Source</th>
+        </tr>
+    </table>
+
+  </main>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    document.getElementById('user-profile').addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdown');
+      if (!document.getElementById('user-profile').contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+  </script>
+</body>
+</html>

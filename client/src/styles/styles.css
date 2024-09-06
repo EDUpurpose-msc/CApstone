@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section {
+    background:#FAFCF8;
+    display: block;
+    padding: 30px 20px;
+    opacity: 1;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    background:#FAFCF8;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #F7F7BA;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header img {
+    height: 40px;
+    margin-right: 10px;
+    width: auto;
+  }
+  
+  .logo-name {
+    font-size: 18px;
+    color: #333;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links a:hover {
+    color: #8eef85;
+  }
+  
+  .nav-links a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .nav-links a.active {
+    color: #8eef85;
+  }
+  .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    position: relative;
+  }
+  
+  .user-profile i {
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  #search-bar {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  .search-container i {
+    font-size: 20px;
+    color: #333;
+    margin-left: 5px;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .dropdown a:hover {
+    background: #f7f7f7;
+  }
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background: #003323;
+    padding: 20px;
+    position: fixed;
+    top: 60px; 
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  .sidebar img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .sidebar a:hover {
+    color: #8bc34a;
+  }
+  .dropdown-container {
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .dropdown-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #1e371e;
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: #1e371e;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #627A72;
+  }
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 250px; 
+    padding: 80px 20px 20px 20px; 
+    width: calc(100% - 250px);
+  }
+
+h2 {
+    padding: 25px;
+   text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    font-size: small;
+}
+
+.merge-row {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    white-space: nowrap;
+}
+.merge-col {
+    white-space: nowrap;
+}
+
+.table2 {
+  width: fit-content;
+}
+.Mpav, .Mpav2 {
+    text-align: left;
+    border: white;
+    width: fit-content;
+
+}
+.Mpav2 {
+    width: 50%;
+}
+
+.PB {
+    text-align: left;
+}
+.RB {
+    text-align: center;
+}
+.AB {
+    text-align: right;
+}
+
+.WL, .SRC {
+  text-align: left;
+  border: white;
+}
+.nonum {
+  width: fit-content;
+}  
+
+.title {
+  text-align: left;
+  border-style: none;
+}
+
+.thead {
+  text-align: left;
+}
+.GI {
+  width: 50%;
+}
+

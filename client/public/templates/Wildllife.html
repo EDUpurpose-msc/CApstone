@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoStats</title>
+  <link rel="stylesheet" href="../src/styles/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+          <img src="../logo.png" alt="Logo">
+          <h1 class="logo-name">ECOSTATS</h1>
+        </div>
+        <nav class="nav-links">
+          <a href="#" >Home</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="reports.html" class="active">Reports</a>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." id="search-bar">
+          <i class='bx bx-search'></i>
+        </div>
+        <div class="user-profile" id="user-profile">
+          <i class='bx bx-user'></i>
+          <div class="dropdown" id="dropdown">
+            <a href="#" id="sign-in">Sign In</a>
+            <a href="#" id="logout">Logout</a>
+          </div>
+        </div>
+      </header>
+  
+    <aside class="sidebar">
+        <h2 class="sidebar-title">REPORTS</h2>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Land <br> Management<i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="./templates/landReport.html" onclick="showContent('report1')">Report 1</a>
+            <a href="./templates/landReport.html" onclick="showContent('report2')">Report 2</a>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Forestry <br> Management<i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="#" onclick="showContent('report3')">Report 3</a>
+            <a href="#" onclick="showContent('report4')">Report 4</a>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Biodiversity Management <i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-content">
+            <a href="./templates/Wildllife.html" onclick="showContent('report5')">Report 5</a>
+            <a href="./templates/bio.html" onclick="showContent('report6')">Report 6</a>
+          </div>
+        </div>
+    </aside>
+  
+  <main class="main-content">
+    
+    <h2></h2>
+
+    <table contenteditable="true">
+        <th class="WL" colspan="10">
+            <h4>Table 3: Inventory of Coral Reef: CY _____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">Municipality</th>
+            <th rowspan="2">Date of Inventory</th>
+            <th rowspan="2">Area Assessed (in hectares) </th>
+            <th rowspan="2">Status (%) </th>
+            <th rowspan="2">Dominant Species</th>
+            <th rowspan="2">Types of Substrates (no.)</th>
+            <th colspan="2">Condition</th>
+            <th rowspan="2">Year Assessed</th>
+        </tr>
+        <tr>
+            <th>Quantitative Interpretation (%) </th>
+            <th>Qualitative Interpretation</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="10">Source:</th>
+    </table>
+    <br>
+
+    <table contenteditable="true">
+        <th  class="WL"  colspan="6">
+            <h4>Table 4: Inventory of Seagrass: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Date of Inventory</th>
+            <th>Area Assessed (in hectares) </th>
+            <th>Dominant Species</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="6">Source:</th>
+
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="5">
+            <h4>Table 5: Mangrove Assessment: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Area Assessed (in hectares) </th>
+            <th>Date of Assessment</th>
+            <th>Species Identified</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="5">Source:</th>
+    </table>
+
+    <br>
+    <table contenteditable="true">
+        <th  class="WL"  colspan="7">
+            <h4>Table 6: Mangrove Assessment: CY _____ for clarification</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Rehabilitated Area (in hectares) </th>
+            <th>Date Established </th>
+            <th>Date Rehabilitated </th>
+            <th>Species Identified</th>
+            <th>Fund Source</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="7">Source:</th>
+    </table>
+
+    <br>
+    <table contenteditable="true">
+        <th  class="WL"  colspan="8">
+            <h4>Table 7: Livelihood Projects Implemented in Coastal Areas: CY _____</h4>
+        </th>
+        <tr>
+            <th rowspan="2">Province</th>
+            <th rowspan="2">Municipality</th>
+            <th rowspan="2">Livelihood Projects</th>
+            <th rowspan="2">Date Established</th>
+            <th colspan="3">Beneficiaries</th>
+            <th rowspan="2">Fund Source</th>
+        </tr>
+        <tr>
+            <Th>Male</Th>
+            <th>Female</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="8">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="10">
+            <h4>Table 8: Inland Wetland in the Region: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Name of Wetland</th>
+            <th>Wetland Type</th>
+            <th>Wet Area (Dry Season) in hectares</th>
+            <th>Wet Area (Wet Season) in hectares</th>
+            <th>Assessed</th>
+            <th>Presence of Management Plan</th>
+            <th>Recognition</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="10">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="8">
+            <h4>Table 9: Classified Caves in the Region: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Barangay</th>
+            <th>Name of Cave</th>
+            <th>Other Cave Name (if any)</th>
+            <th>Classification per DMC</th>
+            <th>DMC No. </th>
+            <th>Presence of Management Plan</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="8">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="6">
+            <h4>Table 10: Identified Assessed Critical Habitats: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Name of Critical Habitats</th>
+            <th>Legal Instrument</th>
+            <th>Area(in hectares) </th>
+            <th>Threatened Species</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="6">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="3">
+            <h4>Table 11: Certificate of Wildlife Registration: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Number of CWR</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="3">Source:</th>
+    </table>
+
+    <br>
+
+    <table contenteditable="true">
+        <th class="WL"  colspan="5">
+            <h4>Table 12: Wildlife Import/Export/Re-Export Permit: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Permit Type</th>
+            <th>Number of Permits Issued</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="5">Source:</th>
+    </table>
+
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="3">
+            <h4>Table 13: CITES Import/ExportRe-export Permit CY _____</h4>
+        </th>
+        <tr>
+            <th>Taxonomic Group</th>
+            <th>Number of permits issued</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+           
+        </tr>
+    </table>
+    
+    <br>
+    <table contenteditable="true">
+        <th colspan="5">
+            <h4>Table 14: Wildlife Local Transport Permit: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Taxonomic Group</th>
+            <th>Quantity</th>
+            <th>Unit of Measurement</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+        <table class="nonum" contenteditable="true">
+            <tr>
+                <th>Origin</th>
+                <th>No. of Species</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <table class="nonum" contenteditable="true">
+            <tr>
+                <th>Destination</th>
+                <th>No. of Species</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <table class="nonum" contenteditable="true">
+            <tr>
+                <th>Purpose</th>
+                <th>No. of Species</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+    <table>
+        <th class="SRC" colspan="5">Source</th>
+    </table>
+
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="5">
+            <h4>Table 15: Wildlife Collector's Permit (WCP): CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Taxa</th>
+            <th>Number of Permits</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="5">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th  class="WL"  colspan="6">
+            <h4>Table 16:Gratutious Permit (GP): CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Taxa</th>
+            <th>Quantity Collected</th>
+            <th>Number of Permits Issued</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="6">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="5">
+            <h4>Table 17: Wildlife Special Use Permit: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Taxonomic Group</th>
+            <th>Number of Permits Issued</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+        <th class="SRC" colspan="5">Source:</th>
+    </table>
+    <br>
+    <table contenteditable="true">
+        <th class="WL"  colspan="6">
+            <h4>Table 18: Special Local Transport Permit: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>Taxonomic Group</th>
+            <th>Quantity</th>
+            <th>Unit of Measurement</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+        </tr>
+       
+    </table>
+    <br>
+    <table class="nonum" contenteditable="true">
+        <tr>
+            <th>Origin</th>
+            <th>No. of Species</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table class="nonum" contenteditable="true">
+        <tr>
+            <th>Destination</th>
+            <th>No. of Species</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table class="nonum">
+        <tr>
+            <th>Purpose</th>
+            <th>No. of Species</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <th class="SRC" colspan="5">Source:</th>
+    </table>
+
+    <br>
+    <table  contenteditable="true">
+        <th class="WL"  colspan="3">
+            <h4>Table 19: Wildlife Farm Permit: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Number of Permits Issued</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="3">Source:</th>
+    </table>
+    <br>
+    <table  contenteditable="true">
+        <th class="WL"  colspan="3">
+            <h4>Table 20: Wildlife Culture Permit: CY _____</h4>
+        </th>
+        <tr>
+            <th>Province</th>
+            <th>Number of Permit Issued</th>
+            <th>Revenue Generated</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <th class="SRC" colspan="3">Source:</th>
+    </table>
+   
+  </main>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    document.getElementById('user-profile').addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdown');
+      if (!document.getElementById('user-profile').contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoStats</title>
+  <link rel="stylesheet" href="../src/styles/reports.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-section">
+      <img src="../logo.png" alt="Logo">
+      <h1 class="logo-name">ECOSTATS</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="../src/Components/Home.jsx" >Home</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="reports.html" class="active">Reports</a>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search..." id="search-bar">
+      <i class='bx bx-search'></i>
+    </div>
+    <div class="user-profile" id="user-profile">
+      <i class='bx bx-user'></i>
+      <div class="dropdown" id="dropdown">
+        <a href="#" id="sign-in">Sign In</a>
+        <a href="#" id="logout">Logout</a>
+      </div>
+    </div>
+  </header>
+  
+  <aside class="sidebar">
+    <h2 class="sidebar-title">REPORTS</h2>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Land <br> Management<i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="./templates/landReport.html" onclick="showContent('report1')">Report 1</a>
+        <a href="./templates/landReport.html" onclick="showContent('report2')">Report 2</a>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Forestry <br> Management<i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="#" onclick="showContent('report3')">Report 3</a>
+        <a href="#" onclick="showContent('report4')">Report 4</a>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">Biodiversity Management <i class='bx bx-chevron-down'></i></button>
+      <div class="dropdown-content">
+        <a href="./templates/Wildllife.html" onclick="showContent('report5')">Report 5</a>
+        <a href="./templates/bio.html" onclick="showContent('report6')">Report 6</a>
+      </div>
+    </div>
+  </aside>
+  
+  <main class="main-content">
+    <div class="tp">
+        <h2> Types of Reports </h2>
+    </div>
+
+    <button class="upload-btn">
+      <div class="upload-icon">
+          <i class='bx bx-upload'></i>
+      </div>
+      <span class="upload-text">UPLOAD</span>
+  </button>
+  
+  
+    <table>
+        <tr>
+            <th>Files</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Monitoring of Protected Area Visitors</td>
+            <td>
+              <a class="bx bx-edit icon-edit" onclick="editFile('report1')"></a>
+              <a class="bx bx-trash icon-trash" onclick="deleteFile('report1')"></a>
+              <a class="bx bx-download icon-download" onclick="downloadFile('report1')"></a>
+              <a class="bx bx-user-check icon-user-check" onclick="viewStats('report1')"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Summary Report on Illegal Logging for the Month of March 2024</td>
+            <td>
+              <a class="bx bx-edit icon-edit" onclick="editFile('report2')"></a>
+              <a class="bx bx-trash icon-trash" onclick="deleteFile('report2')"></a>
+              <a class="bx bx-download icon-download" onclick="downloadFile('report2')"></a>
+              <a class="bx bx-user-check icon-user-check" onclick="viewStats('report2')"></a>              
+            </td>
+        </tr>
+        <tr>
+          <td>FOB Market Price of Logs</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report3')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report3')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report3')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report3')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td> Residential Patents</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report4')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report4')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report4')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report4')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Domestic Retail Price of Other Non-Timber Forest Products</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report5')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report5')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report5')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report5')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Total Summary of Tree Cutting Permits</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report6')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report6')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report6')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report6')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Self Monitoring issued by Year and Municipality</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report7')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report7')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report7')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report7')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Water Permit Applications</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report8')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report8')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report8')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report8')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Local Wildlife Transport Permit Issued</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report9')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report9')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report9')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report9')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Status of Land Classification by Municipality (Area in Hectares)</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report10')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report10')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report10')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report10')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Private Land Timber Permits (PLTPs)</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report11')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report11')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report11')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report11')"></a>            
+          </td>
+        </tr>
+        <tr>
+          <td>Special Private Land Timber Permits (SPLTPs)</td>
+          <td>
+            <a class="bx bx-edit icon-edit" onclick="editFile('report12')"></a>
+            <a class="bx bx-trash icon-trash" onclick="deleteFile('report12')"></a>
+            <a class="bx bx-download icon-download" onclick="downloadFile('report12')"></a>
+            <a class="bx bx-user-check icon-user-check" onclick="viewStats('report12')"></a>            
+          </td>
+        </tr>
+    </table>
+
+
+  </main>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    document.getElementById('user-profile').addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdown');
+      if (!document.getElementById('user-profile').contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+
+});
+
+    // Placeholder functions for file operations (replace with actual logic)
+    function editFile(reportId) {
+      alert("Edit functionality for " + reportId + " not implemented yet.");
+    }
+
+    function deleteFile(reportId) {
+      alert("Delete functionality for " + reportId + " not implemented yet.");
+    }
+
+    function downloadFile(reportId) {
+      alert("Download functionality for " + reportId + " not implemented yet.");
+    }
+
+    function viewStats(reportId) {
+      alert("View Stats functionality for " + reportId + " not implemented yet.");
+    }
+
+    function uploadFile() {
+      alert("Upload functionality not implemented yet.");
+    }
+
+  </script>
+</body>
+</html>
